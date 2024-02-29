@@ -1,0 +1,47 @@
+.bg-opacity {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-opacity::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  opacity: 0.5;
+  background: url("./assests/rose.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  margin: 0;
+}
+.box {
+  opacity: 0.9;
+
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px 10px rgb(0, 0, 0, 0.4);
+  margin: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question {
+  color: azure;
+ margin-left: 20px;
+  font-weight: bold;
+}
